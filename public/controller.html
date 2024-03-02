@@ -6,7 +6,7 @@
   <body>
     <p>Press to calibrate.</p>
     <script>
-      const sensor = new AbsoluteOrientationSensor({ frequency: 60 });
+      const sensor = new AbsoluteOrientationSensor({ frequency: 10 });
       sensor.addEventListener("reading", (e) => handleSensor(e));
       sensor.start();
 
